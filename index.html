@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,23 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font family EB+Garamond -->
+    <!-- font family EB+Garamond+poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,800;1,800&family=Poppins:wght@400&display=swap"
         rel="stylesheet">
+    <!-- font awe icon -->
+    <script src="https://kit.fontawesome.com/d60fa185e5.js" crossorigin="anonymous"></script>
     <style>
         .font-Eb-Garamond {
             font-family: "EB Garamond", serif;
+            font-weight: 800;
         }
 
         .font-popins {
 
             font-family: "Poppins", sans-serif;
             font-weight: 400;
-
-
+            font-size: 16px;
         }
     </style>
     <script>
@@ -33,7 +36,9 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+
+                        'primay-dark-03': '#707070',
+                        'btn-all': '#B68C5A',
                     }
                 }
             }
@@ -44,7 +49,72 @@
 
 <body>
     <header>
-        <nav></nav>
+        <nav class="container mx-auto lg:w-[1170px] my-10">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-popins">
+                            <li><a>Home</a></li>
+
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <img class="w-28 lg:w-36 " src="images/logo2.png" alt="">
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-primay-dark-03">
+                        <li><a>Home</a></li>
+
+                        <li><a>Services<i class="fa-solid fa-chevron-right mt-1"></i></a></li>
+                        <li><a>Cases<i class="fa-solid fa-chevron-right mt-1"></i></a></li>
+
+                        <li><a>Blog<i class="fa-solid fa-chevron-right mt-1"></i></a></li>
+                        <li><a>Contact Us<i class="fa-solid fa-chevron-right mt-1"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <a class="btn font-semibold font-popins lg:text-xl text-white bg-btn-all lg:w-56 lg:h-16">Free
+                        Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner  -->
+        <div class="container mx-auto lg:w-[1170px] my-10 ">
+            <div class="hero h-[550px] rounded-xl " style="background-image:url('images/banner.png');">
+                <div class="hero-overlay bg-black opacity-5"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-2xl">
+                        <h1 class="mb-5 text-3xl lg:text-7xl font-Eb-Garamond text-white leading-tight">We Provide
+                            Effective <br>
+                            Legal Solutions
+                        </h1>
+                        <p class="mb-5 text-[#E7E7E7] font-popins">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.
+                        </p>
+                        <div class="flex flex-col lg:flex-row gap-5 items-center"> <input type="text"
+                                placeholder="Search your services"
+                                class="font-popins h-16 lg:w-[500px] rounded-lg text-[#A0A0A0] pl-5">
+                            <button
+                                class="font-semibold font-popins text-xl text-white bg-btn-all w-36 h-16 rounded-lg">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <section></section>
